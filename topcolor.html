@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Mi Estilo</title>
+    <meta charset="utf-8">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/cuerpo.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+       
+        body {
+            background-color: #f4f4f4;
+            font-family: "DM Serif Text", serif; 
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .encabezado {
+            background-color: #f4f4f4;
+            padding: 20px;
+            font-style: italic;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 64pt;
+            margin: 0;
+        }
+
+        nav {
+            position: relative; 
+        }
+
+        ul {
+            display: flex; 
+            justify-content: center; 
+            list-style-type: none;
+            margin: 20px 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            border: 1px solid #e7e7e7;
+        }
+
+        li {
+            margin: 0 15px;
+        }
+
+        li a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #ddd; 
+            text-decoration-line: underline;
+        }
+
+        li a.active {
+            color: white;
+            background-color: #04AA6D;
+        }
+
+        .menu-toggle {
+            display: none; 
+            cursor: pointer; 
+            font-size: 24px; 
+            padding: 10px;
+            margin: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            ul {
+                display: none; 
+                flex-direction: column; 
+                position: absolute; 
+                background-color: #f3f3f3; 
+                width: 100%; 
+                top: 60px; 
+                left: 0;
+                z-index: 1; 
+            }
+
+            ul.show {
+                display: flex; 
+            }
+
+            .menu-toggle {
+                display: block; 
+            }
+        }
+    </style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #f2d7d5;
+  color: #34495e;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+   
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+    
+</head>
+
+<body>
+    <br>
+    <header role="banner">
+        <div class="encabezado">
+            <h1><strong>Mi Estilo</strong></h1>
+        </div>
+        
+        <nav role="navigation">
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div> 
+            <ul id="menu">
+                <li><a href="inicio.html" target="_self">Inicio</a></li>
+                <li><a href="estilos.html" target="_self">Estilos</a></li>
+                <li><a href="ideas.html" target="_self">Ideas</a></li>
+                <li><a href="tendencias.html" target="_self">Tendencias</a></li>
+                <li><a href="disenadores.html" target="_self">Diseñadores</a></li>
+                <li><a href="topcolor.html" target="_self">Top Color</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show'); 
+        }
+    </script>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
+<script>
+
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+        
+     <!-- Boton de siguiente -->
+   <style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #e6b0aa;
+  color: black;
+}
+
+.next {
+  background-color: #d98880;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+</style>
+        
+
+    <main role="main">
+            <article>
+                <header>
+                    <br>
+                    <H2><center>Color </center></H2>
+                    
+    
+                    <section>
+                        
+                       <center> <h4>Color del mes de agosto Summer Seagrass</h4></center>
+                        <br>
+                        <br>
+                        
+                             <img src="imagenes/color.jpg" width="40%" height="25%" alt="Summer Seagrass">
+                        <br>
+                        <img src="imagenes/paleta1.svg" width="40%" height="25%" alt="Paleta de color">
+                        <br>
+                        <br>
+                       <p class="banner">
+                       Nuestro último color del mes de agosto es Summer Seagrass #85A087, un color de pintura verde fresco con toques de azul. </p> <br>
+<p>El suave verde hierba, inspirado en las praderas submarinas, no puede sino evocar la sensación de la estación estival y su omnipresente deseo de darse un chapuzón en el océano. Forma parte de nuestra nueva Front Door Edición Limitada Summer Seagrass es uno de los 80 colores seleccionados a mano que ofrecen una forma divertida de mostrar al instante su personalidad y la de su hogar al mundo. Sentado en el porche de su casa con la puerta de entrada Summer Seagrass, se sentirá como en su propia pradera de hierbas marinas envuelto en una tranquila ola de relajación.</p>
+  <p class="banner">  ¿Cómo empezar Summer Seagrass?</p>
+<p>El color del mes de agosto, Summer Seagrass, puede ayudarte a empezar a diseñar un espacio relajante que muestre tu personalidad. Combine este verde con White Picket Fence (DET648) y Seagull Wail (DET637) para crear un ambiente ambiente costero. Para obtener más inspiración con verde relajante echa un vistazo a este color color del mes o este verde verde. </p>
+<p>Pruebe Summer Seagrass como tono principal para su hogar o combínelo con otros tonos neutros para conseguir un ambiente relajante y costero. O colombinalo con amarillos, rosas y azules vibrantes para conseguir una paleta juvenil y llena de vida, las posibilidades de este color solo se ven limitadas por el tipo de vibra que deses dar.
+
+</p>
+                        <br>
+                        
+                        <div class="clearfix">
+  <div class="img-container">
+  <img src="imagenes/amarillo.jpg" alt="Combinacion con el color amarillo" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="imagenes/paleta2.svg" alt="Paleta de color" style="width:78%">
+  </div>
+  <div class="img-container">
+  <img src="imagenes/rosa.jpg" alt="Combinacion con el color rosa" style="width:96%">
+  </div>
+</div>
+          
+                        
+                    
+         
+                    </section>
+                  
+                    </header>
+                
+        
+            </article>
+            </main>
+        
+        <footer>
+       <br>
+        <!-- Boton de siguiente en pie de pagina -->
+        <ul id="menu">
+                <li><a href="topcolor2.html" target="_blank" class="previous">&larr; Número Anterior</a></li>
+               
+                
+            </ul>
+        
+        <br>
+    </footer>
+        
+
+
+       
+        
+    
+    </body>
+    </html>

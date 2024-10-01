@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Mi Estilo</title>
+    <meta charset="utf-8">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/cuerpo.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+       
+        body {
+            background-color: #f4f4f4;
+            font-family: "DM Serif Text", serif; 
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .encabezado {
+            background-color: #f4f4f4;
+            padding: 1%;
+            font-style: italic;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 64pt;
+            margin: 0;
+        }
+
+        nav {
+            position: relative; 
+        }
+
+        ul {
+            display: flex; 
+            justify-content: center; 
+            list-style-type: none;
+            margin: 20px 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            border: 1px solid #e7e7e7;
+        }
+
+        li {
+            margin: 0 15px;
+        }
+
+        li a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #ddd; 
+            text-decoration-line: underline;
+        }
+
+        li a.active {
+            color: white;
+            background-color: #04AA6D;
+        }
+
+        .menu-toggle {
+            display: none; 
+            cursor: pointer; 
+            font-size: 24px; 
+            padding: 10px;
+            margin: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            ul {
+                display: none; 
+                flex-direction: column; 
+                position: absolute; 
+                background-color: #f3f3f3; 
+                width: 100%; 
+                top: 60px; 
+                left: 0;
+                z-index: 1; 
+            }
+
+            ul.show {
+                display: flex; 
+            }
+
+            .menu-toggle {
+                display: block; 
+            }
+        }
+    </style>
+    
+    <!-- Boton para subir -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #f2d7d5;
+  color: #34495e;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+   
+}
+
+#myBtn:hover {
+  background-color: #e6b0aa;
+}
+</style>
+    
+</head>
+
+<body>
+    <br>
+    <header role="banner">
+        <div class="encabezado">
+            <h1><strong>Mi Estilo</strong></h1>
+        </div>
+        
+        <nav role="navigation">
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div> 
+            <ul id="menu">
+                <li><a href="inicio.html" target="_self">Inicio</a></li>
+                <li><a href="estilos.html" target="_self">Estilos</a></li>
+                <li><a href="ideas.html" target="_self">Ideas</a></li>
+                <li><a href="tendencias.html" target="_self">Tendencias</a></li>
+                <li><a href="disenadores.html" target="_self">Diseñadores</a></li>
+                <li><a href="topcolor.html" target="_self">Top Color</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show'); 
+        }
+    </script>
+       <!-- Parte de boton subir -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+
+<script>
+
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+    
+    
+     <!-- Boton de siguiente -->
+   <style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #e6b0aa;
+  color: black;
+}
+
+.next {
+  background-color: #d98880;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+</style>
+        
+
+    <main role="main">
+            <article>
+                <header>
+                    <br>
+                    <H2><center>Minimalista </center></H2>
+                    <br>
+                        <br>
+                        <br>
+    <img src="imagenes/minimalista.jpg" width="60%" height="30%" alt="Minimalista">
+                    <br>
+                    <br>
+                    <section>
+                       <p>
+                        El minimalismo es un movimiento que pasó del arte popular al diseño de interiores en la década de 1920, pero aún hoy es considerado como uno de los estilos más innovadores. </p>
+<p>El estilo minimalista en el diseño interior ha sido calificado como el pionero del diseño con visión de futuro. El diseño interior minimalista divide los espacios por las necesidades, lo que significa que cada elemento debe ser funcional.
+Reduce tus ideas a lo básico, luego construye sobre estas ideas seleccionando lo básico. 
+    <br>
+    <br>
+    <p class="banner">
+        Haz más con menos. </p>
+    <br>
+                        
+    <p> Por ejemplo, un collage de arte abstracto no es una marca que defina el diseño interior minimalista. Dale a cada pieza una razón por la que tenga que estar ahí. Una vez hayas seleccionado los muebles que necesita tu espacio, considera el diseño de cada pieza. Piensa en las formas básicas: cuadrados y rectángulos. Luego piensa en las líneas más comunes que se usan en el diseño: horizontal, vertical, diagonal, zigzag y curva.</p>
+                        
+                        <br>
+                            <img src="imagenes/minimalista1.jpg" width="40%" height="25%" alt="Minimalista1">
+                            <img src="imagenes/minimalista2.jpg" width="32.5%" height="75%" alt="Minimalista2">
+                        <br>
+                        <br>
+                           
+<p>Si bien no es necesario ser tan estricto en tu elección, seguir los conceptos básicos unificará el diseño de tu espacio. Se necesita unidad para presentar el proyecto como un paquete completo y, por lo tanto, minimizado. La falta de detalles abstractos permitirá que las piezas importantes ganen atención.</p>
+                        <br>
+<p>El monocromo es uno de los secretos del minimalismo. Por lo general, los colores son neutros. La mayoría de las veces, todo es blanco, desde los techos hasta los suelos, al igual que los muebles. Si no, encontrarás dos colores, rara vez tres. A menudo, es el mismo color que se desvanece en diferentes tonos, destacado en algún lugar. Lo fantástico del monocromo es que un toque de color fuerte colocado al azar en algún lugar nunca pasa desapercibido. </p>
+                        <br>
+                         
+                        
+<p>Por ejemplo, el plato de frutas en la mesa de la cocina; los cojines rojos en el sofá; la alfombra azul en el salón; la colcha naranja en el dormitorio; la pantalla plegable amarilla. </p>
+                        <br> <img src="imagenes/minimalista3.jpg" width="40%" height="25%" alt="Minimalista3">
+                        <br>
+                        <br>
+<p>El espacio vacío se considera un elemento importante en el diseño interior minimalista, ya que el espacio interactúa con los objetos y lo define. El equilibrio visual es igual de importante y solo se puede conseguir al tener un punto focal por ello te recomendamos que te fijes muy bien no solo en la combinación de colores y objetos adecuados sino también en como conviven los unos con los otros.
+    
+</p>
+                       
+                        <br> <img src="imagenes/minimalista4.jpg" width="40%" height="25%" alt="Minimalista4">
+                        <br>
+                        
+                    </section>
+                  
+                    </header>
+                
+             
+            </article>
+            </main>
+        
+        
+        
+
+
+       <footer>
+       <br>
+        <!-- Boton de siguiente en pie de pagina -->
+        <ul id="menu">
+                <li><a href="rustico.html" target="_self" class="previous">&larr; Rustico</a></li>
+                <li><a href="contemporaneo.html" target="_self" class="next">Contemporaneo &rarr;</a></li>
+                
+            </ul>
+        
+        <br>
+    </footer>
+        
+    
+    </body>
+    </html>

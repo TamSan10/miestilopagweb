@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Mi Estilo</title>
+    <meta charset="utf-8">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/cuerpo.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+       
+        body {
+            background-color: #f4f4f4;
+            font-family: "DM Serif Text", serif; 
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .encabezado {
+            background-color: #f4f4f4;
+            padding: 20px;
+            font-style: italic;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 64pt;
+            margin: 0;
+        }
+
+        nav {
+            position: relative; 
+        }
+
+        ul {
+            display: flex; 
+            justify-content: center; 
+            list-style-type: none;
+            margin: 20px 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            border: 1px solid #e7e7e7;
+        }
+
+        li {
+            margin: 0 15px;
+        }
+
+        li a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #ddd; 
+            text-decoration-line: underline;
+        }
+
+        li a.active {
+            color: white;
+            background-color: #04AA6D;
+        }
+
+        .menu-toggle {
+            display: none; 
+            cursor: pointer; 
+            font-size: 24px; 
+            padding: 10px;
+            margin: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            ul {
+                display: none; 
+                flex-direction: column; 
+                position: absolute; 
+                background-color: #f3f3f3; 
+                width: 100%; 
+                top: 60px; 
+                left: 0;
+                z-index: 1; 
+            }
+
+            ul.show {
+                display: flex; 
+            }
+
+            .menu-toggle {
+                display: block; 
+            }
+        }
+    </style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #f2d7d5;
+  color: #34495e;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+   
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+    
+</head>
+
+<body>
+    <br>
+    <header role="banner">
+        <div class="encabezado">
+            <h1><strong>Mi Estilo</strong></h1>
+        </div>
+        
+        <nav role="navigation">
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div> 
+            <ul id="menu">
+                <li><a href="inicio.html" target="_self">Inicio</a></li>
+                <li><a href="estilos.html" target="_self">Estilos</a></li>
+                <li><a href="ideas.html" target="_self">Ideas</a></li>
+                <li><a href="tendencias.html" target="_self">Tendencias</a></li>
+                <li><a href="disenadores.html" target="_self">Diseñadores</a></li>
+                <li><a href="topcolor.html" target="_self">Top Color</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show'); 
+        }
+    </script>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
+<script>
+
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+    <!-- Boton de siguiente -->
+   <style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #e6b0aa;
+  color: black;
+}
+
+.next {
+  background-color: #d98880;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+</style>
+        
+
+    <main role="main">
+            <article>
+                <header>
+                    <br>
+                    <H2><center>Ideas </center></H2>
+    
+                    <section>
+                        <h4>¡Las mejores ideas de decoración para tu hogar!</h4>
+                        <br>
+                        <br>
+                        <br>
+                        
+                    </section>
+                  
+                    </header>
+    
+            </article>
+            </main>
+    
+    <section>
+        <h5>Decoración Sinuosa</h5>
+        <br>
+         
+        <center><img src="imagenes/sinuosa.jpg" width="25%" height="35.8%" alt="Color2">
+        
+        </center>
+        <br>
+                       <p>
+                        Sofás curvos, alfombras con dibujos redondeados, veladores circulares... Sí, se llevan los contornos sinuosos porque hacen la atmósfera más amable y divertida.
+ </p>
+        <br>
+          <center><img src="imagenes/sinuoso3.jpg" width="24%" height="40%" alt="Color2">
+        <img src="imagenes/sinuoso4.jpg" width="20%" height="27%" alt="Color4"></center>
+        
+        <br>
+        
+        <p>¿Qué significan las formas redondeadas en decoración e interiorismo? Relajación, continuidad, fluidez y armonía. Lo orgánico se basa en el concepto de sinuosidad. Líneas que abandonan la rigidez con un efecto impactante en los espacios según se utilicen en mayor o menor medida. En esta edición, los estudios e interioristas han puesto de manifiesto con sus creaciones que lo redondo es tendencia.
+ </p>
+        
+        <p>
+Las líneas redondeadas están presentes en este salón acentuadas por la iluminación. Desde el techo y suelo hasta las paredes y elementos que conforman el espacio.
+                           
+Una pieza corrida en la pared (con revestimiento alistonado) se prolonga y unifica en una plataforma la zona de estar junto a la ventana. 
+
+            
+        </p>
+        <br>
+        <center><img src="imagenes/sinuoso2.jpg" width="40%" height="25%" alt="Color1"></center>
+        <p>
+        Esta decoración orgánica no solo usa las formas, sino también los materiales y colores para crear sensación de calma. 
+Los materiales naturales y cálidos, como la cuarcita brasileña o los textiles de pelo largo, invitan a quedarse.
+    
+</p>
+                         
+                       
+                        <center><img src="imagenes/sinuoso2.jpg" width="40%" height="25%" alt="Color3"></center>
+                         
+                    </section>
+        
+        
+        
+
+<footer>
+       <br>
+        <!-- Boton de siguiente en pie de pagina -->
+        <ul id="menu">
+                <li><a href="ideas2.html" target="_blank" class="previous">&larr; Número Anterior</a></li>
+               <li><a href="ideas.html" target="_blank" class="next">Número Actual &rarr;</a></li>
+                
+            </ul>
+        
+        <br>
+    </footer>
+        
+    
+    </body>
+    </html>
